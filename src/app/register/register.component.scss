@@ -1,0 +1,103 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 15px;
+    
+    ion-icon {
+      font-size: 1.5rem;
+      color: #666;
+      cursor: pointer;
+    }
+  }
+}
+
+ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --background: transparent;
+  margin-bottom: 16px;
+}
+
+ion-label {
+  color: #333;
+  font-weight: 500;
+}
+
+ion-input, ion-select {
+  --padding-start: 0;
+  --padding-end: 0;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+}
+
+.invite-section {
+  margin: 20px 0;
+  
+  ion-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .invite-buttons {
+    display: flex;
+    gap: 10px;
+    
+    ion-button {
+      flex: 1;
+      --background: #fff;
+      --color: #333;
+      --border-width: 1px;
+      --border-style: solid;
+      --border-color: #ccc;
+      
+      &.selected {
+        --background: #4a69bd;
+        --color: #fff;
+      }
+    }
+  }
+}
+
+.masjid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+  
+  .masjid-option {
+    --background: #fff;
+    --color: #333;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: #ccc;
+  }
+}
+
+.submit-button {
+  margin-top: 20px;
+  --background: var(--ion-color-primary);
+}

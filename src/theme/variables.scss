@@ -1,0 +1,46 @@
+:root {
+  /** primary **/
+  --ion-color-primary: #3b4594;
+  --ion-color-primary-rgb: 59, 69, 148;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #343d82;
+  --ion-color-primary-tint: #4f589f;
+
+  /** success **/
+  --ion-color-success: #4CAF50;
+  --ion-color-success-rgb: 76, 175, 80;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #439a46;
+  --ion-color-success-tint: #5eb762;
+
+  /** background **/
+  --ion-background-color: #ffffff;
+  --ion-background-color-rgb: 255, 255, 255;
+
+  /** text **/
+  --ion-text-color: #333333;
+  --ion-text-color-rgb: 51, 51, 51;
+
+  /** font **/
+  --ion-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /** border radius **/
+  --ion-border-radius: 8px;
+
+  /** input styles **/
+  --ion-item-background: transparent;
+  --ion-item-border-color: #cccccc;
+  --ion-item-border-width: 1px;
+  --ion-item-border-style: solid;
+  --ion-item-border-radius: var(--ion-border-radius);
+  --ion-item-padding-start: 16px;
+  --ion-item-padding-end: 16px;
+
+  /** button styles **/
+  --ion-button-border-radius: var(--ion-border-radius);
+  --ion-button-height: 44px;
+  --ion-button-font-weight: 500;
+  --ion-button-letter-spacing: 0.06em;
+}

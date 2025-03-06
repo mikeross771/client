@@ -1,0 +1,7 @@
+{
+  "name": "islamic-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

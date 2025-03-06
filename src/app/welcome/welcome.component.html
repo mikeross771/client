@@ -1,0 +1,54 @@
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <div class="header">
+      <h1>Welcome to Islamic App</h1>
+      <div class="header-icons">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+    </div>
+    
+    <div class="user-options" *ngIf="!showReferral">
+      <div class="option-button normal-users" (click)="selectUserType('normal')">
+        <div class="option-content">
+          <h2>For Normal Users</h2>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+      </div>
+      
+      <div class="option-button masjids" (click)="selectUserType('masjid')">
+        <div class="option-content">
+          <h2>For Masjids</h2>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+      </div>
+      
+      <div class="option-button scholars" (click)="selectUserType('scholar')">
+        <div class="option-content">
+          <h2>For Scholars</h2>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+    
+    <div class="referral-section" *ngIf="showReferral">
+      <h3>How Did you hear about us?</h3>
+      <div class="referral-options">
+        <div class="referral-option" (click)="selectReferral('twitter')">X (Twitter)</div>
+        <div class="referral-option" (click)="selectReferral('youtube')">Youtube</div>
+        <div class="referral-option" (click)="selectReferral('blog')">On a blog / article</div>
+        <div class="referral-option" (click)="selectReferral('linkedin')">LinkedIn</div>
+        <div class="referral-option" (click)="selectReferral('review')">A review site</div>
+        <div class="referral-option" (click)="selectReferral('tiktok')">TikTok</div>
+        <div class="referral-option" (click)="selectReferral('friend')">From a colleague / friend</div>
+        <div class="referral-option" (click)="selectReferral('social')">Facebook / Instagram</div>
+        <div class="referral-option" (click)="selectReferral('podcast')">In a podcast / radio</div>
+        <div class="referral-option" (click)="selectReferral('partner')">A partner</div>
+        <div class="referral-option" (click)="selectReferral('search')">Google search</div>
+        <div class="referral-option" (click)="selectReferral('work')">At work / school</div>
+        <div class="referral-option" (click)="selectReferral('event')">An event / conference</div>
+        <div class="referral-option" (click)="selectReferral('other')">Other</div>
+      </div>
+    </div>
+  </div>
+</ion-content>

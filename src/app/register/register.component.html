@@ -1,0 +1,110 @@
+<ion-content class="ion-padding">
+  <div class="register-container">
+    <div class="header">
+      <h1>Create an account</h1>
+      <div class="progress-bar">
+        <div class="progress" [style.width.%]="(currentStep / totalSteps) * 100"></div>
+      </div>
+      <p class="step-indicator">Step {{currentStep}} of {{totalSteps}}</p>
+    </div>
+
+    <form (ngSubmit)="onSubmit()">
+      <!-- Step 1: Email and Password -->
+      <div class="form-step" *ngIf="currentStep === 1">
+        <ion-item>
+          <ion-label position="floating">Enter Your Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" (click)="nextStep()">Next</ion-button>
+      </div>
+
+      <!-- Step 2: Username -->
+      <div class="form-step" *ngIf="currentStep === 2">
+        <ion-item>
+          <ion-label position="floating">Enter Username</ion-label>
+          <ion-input type="text" [(ngModel)]="username" name="username" required></ion-input>
+        </ion-item>
+        <div class="nav-buttons">
+          <ion-button fill="outline" (click)="previousStep()">Back</ion-button>
+          <ion-button (click)="nextStep()">Next</ion-button>
+        </div>
+      </div>
+
+      <!-- Step 3: Date of Birth -->
+      <div class="form-step" *ngIf="currentStep === 3">
+        <ion-item>
+          <ion-label position="floating">Date of Birth</ion-label>
+          <ion-input type="date" [(ngModel)]="dateOfBirth" name="dateOfBirth" required></ion-input>
+        </ion-item>
+        <div class="nav-buttons">
+          <ion-button fill="outline" (click)="previousStep()">Back</ion-button>
+          <ion-button (click)="nextStep()">Next</ion-button>
+        </div>
+      </div>
+
+      <!-- Step 4: Gender -->
+      <div class="form-step" *ngIf="currentStep === 4">
+        <ion-item>
+          <ion-label position="floating">Gender</ion-label>
+          <ion-select [(ngModel)]="gender" name="gender" required>
+            <ion-select-option value="male">Male</ion-select-option>
+            <ion-select-option value="female">Female</ion-select-option>
+            <ion-select-option value="other">Other</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div class="nav-buttons">
+          <ion-button fill="outline" (click)="previousStep()">Back</ion-button>
+          <ion-button (click)="nextStep()">Next</ion-button>
+        </div>
+      </div>
+
+      <!-- Step 5: Language Selection -->
+      <div class="form-step" *ngIf="currentStep === 5">
+        <ion-item>
+          <ion-label position="floating">Select Your Language</ion-label>
+          <ion-select [(ngModel)]="selectedLanguage" name="language" required>
+            <ion-select-option value="english">English</ion-select-option>
+            <ion-select-option value="arabic">Arabic</ion-select-option>
+            <ion-select-option value="urdu">Urdu</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div class="nav-buttons">
+          <ion-button fill="outline" (click)="previousStep()">Back</ion-button>
+          <ion-button (click)="nextStep()">Next</ion-button>
+        </div>
+      </div>
+
+      <!-- Step 6: Contact Number -->
+      <div class="form-step" *ngIf="currentStep === 6">
+        <ion-item>
+          <ion-label position="floating">Mobile Number</ion-label>
+          <ion-input type="tel" [(ngModel)]="mobileNumber" name="mobileNumber" required placeholder="+91">
+            <div slot="start">+91</div>
+          </ion-input>
+        </ion-item>
+        <div class="nav-buttons">
+          <ion-button fill="outline" (click)="previousStep()">Back</ion-button>
+          <ion-button (click)="nextStep()">Next</ion-button>
+        </div>
+      </div>
+
+      <!-- Step 7: City Pincode -->
+      <div class="form-step" *ngIf="currentStep === 7">
+        <ion-item>
+          <ion-label position="floating">Enter Your Pincode</ion-label>
+          <ion-input type="text" [(ngModel)]="pincode" name="pincode" required placeholder="e.g. 110001"></ion-input>
+        </ion-item>
+        <div class="nav-buttons">
+          <ion-button fill="outline" (click)="previousStep()">Back</ion-button>
+          <ion-button type="submit">Submit</ion-button>
+        </div>
+      </div>
+    </form>
+  </div>
+</ion-content>

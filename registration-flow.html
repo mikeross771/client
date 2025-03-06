@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic App Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Screen 1: User Type Selection -->
+        <section class="screen" id="user-type-selection">
+            <div class="container">
+                <h2 class="screen-title">1st Screen</h2>
+                <div class="user-type-options">
+                    <button class="user-type-btn active">For Normal Users</button>
+                    <button class="user-type-btn">For Masjids</button>
+                    <button class="user-type-btn">For Scholars</button>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 2: Account Creation -->
+        <section class="screen" id="account-creation">
+            <div class="container">
+                <h2 class="screen-title">Create an Account</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="email">Enter Your Email</label>
+                        <input type="email" id="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter a strong password" required>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 3: Enter Username -->
+        <section class="screen" id="enter-username">
+            <div class="container">
+                <h2 class="screen-title">Choose Username</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="username">Enter Username</label>
+                        <input type="text" id="username" placeholder="Select a username" required>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 4: Date of Birth -->
+        <section class="screen" id="date-of-birth">
+            <div class="container">
+                <h2 class="screen-title">Personal Information</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 5: Gender -->
+        <section class="screen" id="gender-selection">
+            <div class="container">
+                <h2 class="screen-title">Select Gender</h2>
+                <form class="form">
+                    <div class="form-group radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male">
+                            <span class="radio-text">Male</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female">
+                            <span class="radio-text">Female</span>
+                        </label>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 6: Invitation Choice -->
+        <section class="screen" id="invitation-choice">
+            <div class="container">
+                <h2 class="screen-title">Do you invite people towards allah (Tableeegi activities)?</h2>
+                <div class="choice-buttons">
+                    <button class="choice-btn">Yes</button>
+                    <button class="choice-btn">No</button>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 7: Language Selection -->
+        <section class="screen" id="language-selection">
+            <div class="container">
+                <h2 class="screen-title">Select Your Language</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="language">Language</label>
+                        <select id="language" required>
+                            <option value="" disabled selected>Select Language</option>
+                            <option value="english">English</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="urdu">Urdu</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="bengali">Bengali</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 8: Verify Mobile Number -->
+        <section class="screen" id="verify-mobile">
+            <div class="container">
+                <h2 class="screen-title">Verify your mobile number</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 9: Sect Selection -->
+        <section class="screen" id="sect-selection">
+            <div class="container">
+                <h2 class="screen-title">Select Sect</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="sect">Sect</label>
+                        <select id="sect" required>
+                            <option value="" disabled selected>Select Sect</option>
+                            <option value="sunni">Sunni</option>
+                            <option value="shia">Shia</option>
+                            <option value="ahle_hadees">Ahle Hadees</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 10: Location-Based Personalization -->
+        <section class="screen" id="location-personalization">
+            <div class="container">
+                <h2 class="screen-title">Local Masjid Selection</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="pincode">Enter Your Pincode for personalized Suggestions</label>
+                        <input type="text" id="pincode" placeholder="e.g. 110001" required>
+                    </div>
+                </form>
+                <p class="instruction-text">Choose a masjid Which is near to your House</p>
+                <div class="masjid-list">
+                    <button class="masjid-btn"><span class="masjid-indicator"></span>Masjid Name</button>
+                    <button class="masjid-btn"><span class="masjid-indicator"></span>Masjid Name</button>
+                    <button class="masjid-btn"><span class="masjid-indicator"></span>Masjid Name</button>
+                    <button class="masjid-btn"><span class="masjid-indicator"></span>Masjid Name</button>
+                    <button class="masjid-btn"><span class="masjid-indicator"></span>Masjid Name</button>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-next">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 11: Referral Source -->
+        <section class="screen" id="referral-source">
+            <div class="container">
+                <h2 class="screen-title">How Did you hear about us?</h2>
+                <form class="form">
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="twitter">
+                            <span class="checkbox-text">X (Twitter)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="youtube">
+                            <span class="checkbox-text">Youtube</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="blog">
+                            <span class="checkbox-text">On a blog / article</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="linkedin">
+                            <span class="checkbox-text">LinkedIn</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="review">
+                            <span class="checkbox-text">A review site</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="tiktok">
+                            <span class="checkbox-text">TikTok</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="friend">
+                            <span class="checkbox-text">From a colleague / friend</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="social">
+                            <span class="checkbox-text">Facebook / Instagram</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="podcast">
+                            <span class="checkbox-text">In a podcast / radio</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="partner">
+                            <span class="checkbox-text">A partner</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="search">
+                            <span class="checkbox-text">Google search (or other search engine)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="work">
+                            <span class="checkbox-text">At work / school</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="event">
+                            <span class="checkbox-text">An event / conference</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="referral" value="other">
+                            <span class="checkbox-text">Other</span>
+                        </label>
+                    </div>
+                </form>
+                <div class="nav-buttons">
+                    <button class="btn-back">Back</button>
+                    <button class="btn-submit">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
